@@ -41,19 +41,21 @@ hostnamectl --static set-hostname kdc.uc.tn
 hostnamectl --static set-hostname client.uc.tn
 
 ```
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/preconfig/changing%20hastname%20of%20Machine%202%20to%20Client.PNG)
+
 Now we are going to create the Dns by some changes in the */etc/hosts* file using the command
 ```bash
 sudo nano /etc/hosts
 
 ```
+
 now we are going to add the information below:
 ```bash
 <KDC_IP_ADDRESS>    kdc.uc.tn       kdc
 <CLIENT_ IP_ADDRESS>    client.uc.tn    client
 
 ```
-
-
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/preconfig/Dns%20Machine1.PNG)
 
 
 ## KDC Machine Configuration
