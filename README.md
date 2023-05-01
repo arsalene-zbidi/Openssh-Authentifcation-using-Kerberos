@@ -68,7 +68,13 @@ Some configuration will be displayed :
 
 1. configuration of the realm : 'UC.TN' *(must be all uppercase)*
 
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/realm%20config.PNG)
+
+
 2.  configuration of the Kerberos server : 'kdc.uc.tn' 
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/Serveur%20kdc%20config.PNG)
 
 3.  configuration of the Admin server : 'kdc.uc.tn'
 
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/admin%20server%20config.PNG)
