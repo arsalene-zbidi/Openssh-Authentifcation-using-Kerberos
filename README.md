@@ -34,7 +34,8 @@ In my case :
 hostnamectl --static set-hostname kdc.uc.tn
 
 ```
-![alt text](preconfig\changing hostname name Machine 1 to KDC.PNG)
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/preconfig/changing%20hostname%20name%20Machine%201%20to%20KDC.PNG)
+
 **Client Machine**
 ```bash
 hostnamectl --static set-hostname client.uc.tn
