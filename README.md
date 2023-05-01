@@ -34,6 +34,7 @@ In my case :
 hostnamectl --static set-hostname kdc.uc.tn
 
 ```
+![alt text](preconfig\changing hostname name Machine 1 to KDC.PNG)
 **Client Machine**
 ```bash
 hostnamectl --static set-hostname client.uc.tn
