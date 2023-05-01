@@ -4,6 +4,8 @@
 This is a demo of how to authentifcate to openssh connectivity tool using **Gasspi** and **Kerberos** in order to allow **single-sign-on** Authentifcation without password.
 
 # Kerberos 
+![Logo](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kerberos_1.png)
+
 Kerberos is a widely used network authentication protocol that provides secure authentication and authorization for clients and servers in a distributed computing environment. It uses a system of tickets to verify identities and supports mutual authentication between clients and servers.
 
 ## Kerberos Architecture
