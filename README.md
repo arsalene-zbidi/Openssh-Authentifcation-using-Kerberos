@@ -200,6 +200,8 @@ First we are going to start by installing the openssh-server using those command
 ```
 now we need to enable Gassapi which is the *Generic Security Services Application* Programming Interface, which is a standard interface for securely exchanging authentication and authorization data between networked applications.
 
+In order to enable the Gassapi we need to change  the configuration file in */etc/ssh/ssh_config*
+
 ```bash
    sudo nano /etc/ssh/ssh_config
 ```
@@ -209,6 +211,7 @@ now we need to enable Gassapi which is the *Generic Security Services Applicatio
 ## KDC Machine Configuration
 
 In This section we are going to configure our **Client Machine** starting by those two commands:
+
 
 ```bash
 $ sudo apt-get update
@@ -220,4 +223,48 @@ Like the kdc machine some configuration will be displayed:
 * the realm : 'UC.TN' (must be all uppercase)
 * the Kerberos server : 'kdc.uc.tn'
 * the administrative server : 'kdc.uc.tn'
+
+
+**configuration of Openssh-server in the client**
+
+```bash
+   sudo apt-get update
+   sudo apt-get install openssh-server
+```
+then the configuration file in */etc/ssh/ssh_config*
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/client/changing%20config%20file%20for%20openssh.PNG
+)
+
+**Creating a User**
+
+In this section we are going to create a user that will use the openssh service
+
+```bash
+   sudo adduser user
+```
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/client/adding%20a%20user.PNG
+)
+
+**Generating a ticket for user**
+ 
+ In this section we are going to generate a ticket to user which is essentially a cryptographic token that contains the user's identity
+
+ using those commands :
+```bash
+   kinit 
+   klist 
+```
+
+*kinit*: in order to initalize the ticket 
+*keylist*: in order to display the key's list
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/client/generating%20a%20ticket%20granting%20ticket%20(TGT).PNG
+)
+
++ Now the user can authentficate to the *kdc.uc.tn* machine without a password
+
+![App Screenshot](
+)
 
