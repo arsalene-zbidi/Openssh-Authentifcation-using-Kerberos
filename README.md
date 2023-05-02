@@ -180,3 +180,21 @@ In this section we are going to the Keytab inorder to authenticate users and ser
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20some%20principle%20for%20keytab%20in%20the%20new%20version.PNG
 )
 
+* list of entries in the keytab 
+
+```bash
+      $ ktutil 
+   ktutil: rkt /etc/krb5kdc/kadim5.keytab
+   ktutil: l
+```
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/vifing%20kadmin%20principel%20is%20added%20to%20keyfile.PNG
+)
+
+**Configuration of openssh server**
+
+First we are going to start by installing the openssh-server using those commands:
+
+```bash
+   sudo apt-get update
+   sudo apt-get install openssh-server
+```
