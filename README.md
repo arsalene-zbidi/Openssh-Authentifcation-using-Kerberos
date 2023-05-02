@@ -144,3 +144,39 @@ now , we need to restart krb5-admin-server using the command
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20host%20principle.PNG
 )
 
+**configurating keytab in kdc machine**
+
+In this section we are going to the Keytab inorder to authenticate users and services without requiring users to enter their passwords.
+
+* Adding the admine principel to keytab 
+
+ ```bash
+      $ ktutil 
+   ktutil:  add_entry -password -p root/admin@UC.TN -k 1 -e aes256-cts-hmac-sha1-96
+   Password for postgres/pg.insat.tn@INSAT.TN: 
+   ktutil:  wkt postgres.keytab
+```
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/configure%20keytab%20adding%20admin%20principle.PNG
+)
+
+* Adding host principel to keytab
+
+```bash
+      $ ktutil 
+   ktutil:  ktadd host/kdc.uc.tn
+```
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20host%20principle%20to%20the%20key%20tab.PNG
+)
+
+* Adding other principels to keytab 
+
+```bash
+      $ ktutil 
+   ktutil: ktadd -k /etc/krb5kdc/kadm5.keytab kadmin/admin
+   ktutil: ktadd -k /etc/krb5kdc/kadm5.keyteb kadmin/changepw
+```
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20some%20principle%20for%20keytab%20in%20the%20new%20version.PNG
+)
+
