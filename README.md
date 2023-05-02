@@ -83,3 +83,12 @@ Some configuration will be displayed :
 3.  configuration of the Admin server : 'kdc.uc.tn'
 
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/admin%20server%20config.PNG)
+
+*initialization the KDC database*
+Inorder to initialize the KDC database we need to set the master key using the command:
+
+```bash
+sudo krb5_newrealm
+```
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/intialize%20UC.tn%20Database.PNG)
+
