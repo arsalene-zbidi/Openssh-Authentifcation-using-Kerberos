@@ -85,6 +85,7 @@ Some configuration will be displayed :
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/admin%20server%20config.PNG)
 
 4. initialization the KDC database
+
 Inorder to initialize the KDC database we need to set the master key using the command:
 
 ```bash
@@ -92,3 +93,14 @@ sudo krb5_newrealm
 ```
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/intialize%20UC.tn%20Database.PNG)
 
+4. Adding principles
+
++ root/admin principal
+
+To manage the users and services in a Kerberos realm, they are defined as principals. An administrator user must be created manually to manage these principals.
+
+```bash
+    sudo kadmin.local
+    kadmin.local:  add_principal root/admin
+```
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20root_admin%20principle.PNG)
