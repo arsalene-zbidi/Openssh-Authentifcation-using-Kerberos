@@ -206,4 +206,18 @@ now we need to enable Gassapi which is the *Generic Security Services Applicatio
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/configure%20ssh-config%20by%20enabling%20GassAPI.PNG
 )
 
+## KDC Machine Configuration
+
+In This section we are going to configure our **Client Machine** starting by those two commands:
+
+```bash
+$ sudo apt-get update
+  sudo apt-get install krb5-user libpam-krb5 libpam-ccreds
+```
+
+Like the kdc machine some configuration will be displayed:
+
+* the realm : 'UC.TN' (must be all uppercase)
+* the Kerberos server : 'kdc.uc.tn'
+* the administrative server : 'kdc.uc.tn'
 
