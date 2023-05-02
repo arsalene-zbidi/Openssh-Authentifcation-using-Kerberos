@@ -126,7 +126,7 @@ now , we need to restart krb5-admin-server using the command
 ```
 + Adding the User principle
 
-  ```bash
+```bash
     sudo kadmin.local
     kadmin.local:  add_principal user
 ```
