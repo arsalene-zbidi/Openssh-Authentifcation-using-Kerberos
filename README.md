@@ -7,12 +7,16 @@ This is a demo of how to authentifcate to openssh connectivity tool using **Gass
 
 
 Kerberos is a widely used network authentication protocol that provides secure authentication and authorization for clients and servers in a distributed computing environment. It uses a system of tickets to verify identities and supports mutual authentication between clients and servers.
-<div style="text-align:center">
 
-![Logo](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kerberos_1.png)
- </div>
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kerberos_1.png)
+ 
 ## Kerberos Architecture
 The Kerberos architecture consists of three main components: the client, the server, and the Kerberos authentication server (KDC). The KDC is responsible for issuing and verifying tickets, while the client and server use these tickets to authenticate and access network resources securely. The protocol uses symmetric-key cryptography and mutual authentication to ensure secure identity verification in distributed systems.
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/kerberos%20arch.png
+)
+
 # Openssh
 OpenSSH is a free and open-source implementation of the Secure Shell (SSH) protocol used to securely access and manage remote servers and devices. It provides encrypted communication between client and server, enabling secure data transfer and remote command execution. OpenSSH includes a suite of tools, including ssh, scp, and sftp, which allow users to securely connect to remote servers, transfer files, and manage remote systems.
 
@@ -265,6 +269,13 @@ In this section we are going to create a user that will use the openssh service
 
 + Now the user can authentficate to the *kdc.uc.tn* machine without a password
 
-![App Screenshot](
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/client/connecting%20without%20password.png
 )
+
+## Acknowledgements
+
+ - [Usefull video: Teckwall](https://www.youtube.com/watch?v=vx2vIA2Ym14&list=RDCMUC_wmzB9ziSW5KbZxyDfZV_w&index=1)
+ - [Usefull github repo : yosra270](https://github.com/yosra270/postgresql-auth-with-kerberos/blob/main/README.md)
+ 
+
 
