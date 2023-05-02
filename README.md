@@ -104,3 +104,22 @@ To manage the users and services in a Kerberos realm, they are defined as princi
     kadmin.local:  add_principal root/admin
 ```
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20root_admin%20principle.PNG)
+
+ To provide full access to the Kerberos database, the admin principal *`root/admin`* must be granted all access rights using the **`/etc/krb5kdc/kadm5.acl`** configuration file.
+
+```bash
+    sudo nano /etc/krb5kdc/kadm5.acl
+```
+
+  In this file we need to add this ligne 
+  
+  ```bash
+    */admin@INSAT.TN    *
+```
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20root_admin%20principle.PNG)
+
+now , we need to restart krb5-admin-server using the command 
+
+  ```bash
+   sudo service krb5-admin-server restart
+```
