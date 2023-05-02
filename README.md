@@ -84,7 +84,7 @@ Some configuration will be displayed :
 
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/admin%20server%20config.PNG)
 
-*initialization the KDC database*
+4. initialization the KDC database
 Inorder to initialize the KDC database we need to set the master key using the command:
 
 ```bash
