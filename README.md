@@ -116,10 +116,31 @@ To manage the users and services in a Kerberos realm, they are defined as princi
   ```bash
     */admin@INSAT.TN    *
 ```
-![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/krb5acl.PNG)
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/krb5acl.PNG
+)
 
 now , we need to restart krb5-admin-server using the command 
 
   ```bash
    sudo service krb5-admin-server restart
 ```
++ Adding the User principle
+
+  ```bash
+    sudo kadmin.local
+    kadmin.local:  add_principal user
+```
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20user%20principle.PNG
+)
+
++ Adding host principle
+
+ ```bash
+    sudo kadmin.local
+    kadmin.local:  add_principal host/kdc.uc.tn
+```
+
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20host%20principle.PNG
+)
+
