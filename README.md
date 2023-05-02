@@ -116,7 +116,7 @@ To manage the users and services in a Kerberos realm, they are defined as princi
   ```bash
     */admin@INSAT.TN    *
 ```
-![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/adding%20root_admin%20principle.PNG)
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/krb5acl.PNG)
 
 now , we need to restart krb5-admin-server using the command 
 
