@@ -190,7 +190,7 @@ In this section we are going to the Keytab inorder to authenticate users and ser
 ![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/vifing%20kadmin%20principel%20is%20added%20to%20keyfile.PNG
 )
 
-**Configuration of openssh server**
+**Configuration of Openssh server**
 
 First we are going to start by installing the openssh-server using those commands:
 
@@ -198,3 +198,12 @@ First we are going to start by installing the openssh-server using those command
    sudo apt-get update
    sudo apt-get install openssh-server
 ```
+now we need to enable Gassapi which is the *Generic Security Services Application* Programming Interface, which is a standard interface for securely exchanging authentication and authorization data between networked applications.
+
+```bash
+   sudo nano /etc/ssh/ssh_config
+```
+![App Screenshot](https://github.com/arsalene-zbidi/Openssh-Authentifcation-using-Kerberos/blob/main/Kdc/configure%20ssh-config%20by%20enabling%20GassAPI.PNG
+)
+
+
